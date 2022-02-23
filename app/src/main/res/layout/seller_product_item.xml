@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="1dp"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/productIV"
+            android:padding="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/splash_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_height="20dp"
+            android:elevation="10dp"
+            android:background="#EF3021"
+            android:textColor="#ffffff"
+            android:text="-10%"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:id="@+id/discount"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/productIV"
+            android:layout_toRightOf="@+id/productIV"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="YOGAFY-Darjeeling Grean Tea | Pure Whole leaf - Decaf Tea for ..."
+                android:id="@+id/spTitle"
+                android:textSize="13sp"
+                android:fontFamily="@font/open_sans_bold"
+                android:textColor="#3A3838"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5 KG"
+                android:id="@+id/spQuantity"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹284.00"
+                        android:id="@+id/spDiscountedPrice"
+                        android:textSize="15sp"
+                        android:textColor="#423D3D"
+                        android:fontFamily="@font/open_sans_bold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="₹499.00"
+                        android:id="@+id/spPrice"
+                        android:fontFamily="@font/open_sans"
+                        android:textSize="12sp"
+                        />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:layout_toLeftOf="@id/deleteProduct"
+                    android:id="@+id/editProduct"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/edit_icon"
+                    android:background="@drawable/add_to_cart_btn"
+                    android:layout_marginRight="10dp"
+                    android:tint="@color/white"/>
+
+                <ImageButton
+                    android:id="@+id/deleteProduct"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/delete_icon"
+                    android:background="@drawable/add_to_cart_btn"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:tint="@color/white"/>
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

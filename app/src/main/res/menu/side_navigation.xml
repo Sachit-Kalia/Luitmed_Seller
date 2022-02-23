@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/mHome"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/mOrders"
+            android:icon="@drawable/home_icon"
+            android:title="Orders" />
+
+        <item
+            android:id="@+id/mPrescriptions"
+            android:icon="@drawable/home_icon"
+            android:title="Prescriptions" />
+
+    </group>
+
+
+    <item android:title="My Products">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/mProducts"
+                    android:icon="@drawable/products_icon"
+                    android:title="Products" />
+
+                <item
+                    android:id="@+id/mAddProduct"
+                    android:icon="@drawable/add_icon"
+                    android:title="Add Product" />
+
+                <item
+                    android:id="@+id/mBanners"
+                    android:icon="@drawable/products_icon"
+                    android:title="Banners" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+
+
+        <item android:title="My Account">
+
+            <menu>
+              <group android:checkableBehavior="single">
+                  <item
+                      android:id="@+id/mLogin"
+                      android:icon="@drawable/login_icon"
+                      android:title="Login" />
+
+                  <item
+                      android:id="@+id/mAccount"
+                      android:icon="@drawable/account_icon"
+                      android:title="My Account" />
+
+                  <item
+                      android:id="@+id/mLogout"
+                      android:icon="@drawable/logout_icon"
+                      android:title="Logout" />
+              </group>
+
+            </menu>
+
+        </item>
+
+
+    <item android:title="Contact" >
+
+        <menu>
+           <group android:checkableBehavior="single">
+
+               <item
+                   android:id="@+id/mHelp"
+                   android:title="Help"
+                   android:icon="@drawable/help_icon"
+                   />
+
+               <item
+                   android:id="@+id/mRateUs"
+                   android:icon="@drawable/logout_icon"
+                   android:title="Rate us" />
+
+           </group>
+
+        </menu>
+
+    </item>
+
+</menu>

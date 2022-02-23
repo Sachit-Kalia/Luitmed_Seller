@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@color/main"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/user_icon"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sachit Kalia"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_weight="80"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/sShopTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prashanti Medicos"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:layout_weight="80"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/sPhoneTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8278838079"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:layout_weight="80"
+            android:layout_marginLeft="16dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
